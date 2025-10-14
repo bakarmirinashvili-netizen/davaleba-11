@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: lightblue;
+  position: relative;
+}
+
+.text {
+  font-size: 50px;
+  color: red;
+  animation: movingtext 4s infinite alternate;
+}
+
+@keyframes movingtext {
+  from {
+    transform: translateX(-30px);
+  }
+  to {
+    transform: translateX(30px);
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+button {
+  width: 100px;
+  height: 100px;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.yes {
+  animation: yes 2s infinite alternate;
+  background-color: lightgreen;
+}
+
+@keyframes yes {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-30px);
+  }
+}
+
+.no {
+  animation: no 2s infinite alternate;
+  background-color: lightpink;
+}
+
+@keyframes no {
+  from {
+    transform: translateX(30px);
+  }
+  to {
+    transform: translateX(60px);
+  }
+}
+
+@keyframes heart {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.heart {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  animation: heart 6s linear infinite;
+}
+
+.heart1 {
+  top: 10%;
+  left: 10%;
+}
+.heart2 {
+  top: 15%;
+  right: 15%;
+}
+.heart3 {
+  bottom: 15%;
+  left: 20%;
+}
+.heart4 {
+  bottom: 10%;
+  right: 10%;
+}
+.heart5 {
+  top: 50%;
+  left: 5%;
+}
+.heart6 {
+  top: 60%;
+  right: 5%;
+}
