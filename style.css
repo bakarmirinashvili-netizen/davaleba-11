@@ -110,3 +110,31 @@ button {
   top: 60%;
   right: 5%;
 }
+
+.flower {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+  animation: flower 5s infinite alternate;
+}
+
+@keyframes flower {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(400px);
+  }
+  50% {
+    transform: translateY(-500px);
+  }
+  75% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateY(500px);
+  }
+}
